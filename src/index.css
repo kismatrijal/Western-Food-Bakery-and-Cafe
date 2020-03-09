@@ -1,3 +1,49 @@
+/* 
+====== 
+Fonts
+======
+*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400|Kaushan+Script&display=swap");
+/* 
+
+====== 
+Variables 
+======
+*/
+:root {
+  /* --primaryColor: #9e3aa3; */
+  /* --primaryDarkColor: #4e1d51; */
+  --primaryColor: #f15025;
+  --primaryDarkColor: #c02c03;
+  --primaryFont: "Catamaran", sans-serif;
+  --slantedFont: "Kaushan Script", cursive;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #ececec;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainRed: #bd0303;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+  
+  --primaryColor: #5fb7ea;
+  --primaryRGBA: rgba(0,0,0,0.3);
+  --mainGrey: #fafafa;
+  --darkGray: #5f5e5e;
+  --mainWhite: #fff;
+  --mainTransition: all 0.3s ease-in-out;
+  --mainSpacing: 0.3erm;
+}
+
+/*Global style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +57,123 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p{
+  margin-bottom:1.25rem;
+}
+ul{
+  list-style-type: none;
+  
+}
+a {
+  text-decoration: none;
+  color: var(--primaryRGBA);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+.logo {
+  margin: 0 center;
+  width: 9rem;
+}
+
+.nav-logo{
+  width:25%;
+}
+
+/*header
+*/
+.header {
+  padding: 2rem 0;
+}
+.logo {
+  margin: 0 auto;
+  width: 9rem;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  width: var(--smallWidth);
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: var(--maxWidth);
+}
+.header ul div {
+  display: flex;
+  align-items: center;
+}
+.header a {
+  text-transform: capitalize;
+  margin: 0 0.25rem;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  transition: var(--mainTransition);
+}
+.header a:hover {
+  color: var(--primaryColor);
+}
+@media screen and (min-width: 768px) {
+  .header a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/*Navbar*/
+
+
+.nav-main {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width:1170px;
+  margin:0 auto;
+  color: #222; 
+  /*padding:  0.5rem 0; */
+  text-transform: capitalize;
+  margin: 0 0.25rem;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  transition: var(--mainTransition);
+
+}
+
+.nav-main  {
+ 
+  align-items: center;
+}
+.test :hover {
+  color: var(--primaryColor) !important;
+  
+}
+
+
+@media screen and (min-width:768px){
+  .nav-main {
+    font-size:1.5rem;
+    margin: 0 0.5rem;;
+  }
+}
+
+.nav-icon{
+  font-size: 1.5rem;
+  cursor:pointer;
+}
+.nav-cart{
+  position: relative;
+}
+.cart-item{
+  background: var(--primaryColor);
+  color:var(--mainWhite);
+  position: absolute;
+  top:2px;
+  right: 20px;
+  padding:0 4px;
+  border-radius: 50%;
+}
+
+#id{
+  text-decoration: none;
+}
+
