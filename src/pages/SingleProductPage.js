@@ -7,7 +7,7 @@ import {ProductConsumer} from '../context';
 export default function SingleProductPage(){
     return(
         <>
-           <Hero img ={SingleProductImg} title="single producut"/>
+           <Hero img ={SingleProductImg} title="single product"/>
            <ProductConsumer>
                {value=> {
                    const {singleProduct, addToCart, loading}= value;
