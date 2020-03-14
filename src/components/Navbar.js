@@ -32,7 +32,7 @@ export default function Navbar() {
                   <Link
                     className="test nav-link"
                     style={{ textDecoration: "none" }}
-                    to="/"
+                    to="/home"
                   >
                     Home
                   </Link>
