@@ -51,3 +51,7 @@ body{
   color: var(--mainBlack);
   outline-color: var(--darkGray);
 }
+
+.cart-icon{
+  cursor: pointer;
+}

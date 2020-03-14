@@ -6,6 +6,32 @@ import { ProductConsumer } from "../context";
 import logo from "../images/logo.jpg";
 
 export default function Navbar() {
+<<<<<<< HEAD
+    return (<ProductConsumer>
+        {   
+            value=>{
+                const { cartItems, handleCart}= value
+                return <NavWrapper>
+                    <div className="nav-main">
+                        <img className="nav-logo" src = {logo} alt="Western Food Bakery  cafe" />                          
+                              
+                        <Link className="test" style={{ textDecoration: 'none' }} to="/">Home</Link>
+                        <Link style={{ textDecoration: 'none', color:'black' }} to ="/products">Product</Link> 
+                        <Link style={{ textDecoration: 'none', color:'black' }} to="/about">About</Link> 
+                        <Link style={{ textDecoration: 'none', color:'black' }} to ="/contact">Contact</Link>                                                                                                                                                                                                                                    
+                            
+                            <div style={{ color: '#5fb7ea' }}>
+                                <Link to="/cart"><FaCartPlus className="nav-icon" onClick={handleCart}/> </Link>
+                                
+                                <div className="cart-item">
+                                    {cartItems}
+                                </div>    
+                            </div>
+                     </div>
+                 </NavWrapper>
+            }
+        }
+=======
   return (
     <ProductConsumer>
       {value => {
@@ -70,6 +96,7 @@ export default function Navbar() {
           </NavWrapper>
         );
       }}
+>>>>>>> ba0a8c4645e30052bec6ef21de93f957aefccf27
     </ProductConsumer>
   );
 }
