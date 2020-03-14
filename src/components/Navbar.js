@@ -18,10 +18,13 @@ export default function Navbar() {
                         <Link style={{ textDecoration: 'none', color:'black' }} to ="/products">Product</Link> 
                         <Link style={{ textDecoration: 'none', color:'black' }} to="/about">About</Link> 
                         <Link style={{ textDecoration: 'none', color:'black' }} to ="/contact">Contact</Link>                                                                                                                                                                                                                                    
-                            <div>
-                                <FaCartPlus className="nav-icon" onClick={handleCart}>
-                                </FaCartPlus>
-                                <div className="cart-item">{cartItems}</div>    
+                            
+                            <div style={{ color: '#5fb7ea' }}>
+                                <Link to="/cart"><FaCartPlus className="nav-icon" onClick={handleCart}/> </Link>
+                                
+                                <div className="cart-item">
+                                    {cartItems}
+                                </div>    
                             </div>
                      </div>
                  </NavWrapper>
