@@ -32,7 +32,7 @@ export default function Navbar() {
                   <Link
                     className="test nav-link"
                     style={{ textDecoration: "none" }}
-                    to="/home"
+                    to="/"
                   >
                     Home
                   </Link>
@@ -58,10 +58,12 @@ export default function Navbar() {
                     Contact
                   </Link>
                   <div>
-                    <FaCartPlus
-                      className="nav-icon"
-                      onClick={handleCart}
-                    ></FaCartPlus>
+                    <Link to="/cart">
+                      <FaCartPlus
+                        className="nav-icon"
+                        onClick={handleCart}
+                      ></FaCartPlus>
+                    </Link>
                     <div className="cart-item">{cartItems}</div>
                   </div>
                 </ul>

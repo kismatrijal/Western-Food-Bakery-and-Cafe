@@ -185,8 +185,8 @@ img {
   background: var(--primaryColor);
   color: var(--mainWhite);
   position: absolute;
-  top: 2px;
-  right: 60px;
+  top: 4px;
+  right: 70px;
   padding: 0 4px;
   border-radius: 50%;
 }
